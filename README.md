@@ -1,6 +1,6 @@
 # ansible-role-sshd
 
-Flexible role to configure OpenSSH server.
+Flexible role to configure OpenSSH sshd server.
 
 # Role Variables
 
@@ -15,7 +15,10 @@ sshd_DisableForwarding: "yes"
 # sets DisableForwarding yes
 ```
 
-Most keys take first value encountered, but there are exceptions. These keys can all be listed more than once:
+# Limitations
+
+Currently only one instance of each key is allowed and they are listed in alphabetical order.
+
+This has consequences for keys that may appear more than once, and keys in which the order matters, such as
 **AcceptEnv, AllowGroups, AllowUsers, DenyGroups, DenyUsers, HostKey, ListenAddress, Match, Port**.
 
-If you import the role more than once, you can "stack" these keys by placing the config in different files under `/etc/sshd_config.d/` with `sshd_config_file`.
