@@ -15,7 +15,7 @@ sshd_DisableForwarding: "yes"
 # sets DisableForwarding yes
 ```
 
-Most keys take first value encountered, but there are exceptions. The keys are
+Most keys take first value encountered, but there are exceptions. These keys can all be listed more than once:
 **AcceptEnv, AllowGroups, AllowUsers, DenyGroups, DenyUsers, HostKey, ListenAddress, Match, Port**.
 
 If you import the role more than once, you can "stack" these keys by placing the config in different files under `/etc/sshd_config.d/` with `sshd_config_file`.
