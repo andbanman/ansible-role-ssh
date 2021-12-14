@@ -1,4 +1,4 @@
-# ansible-role-openssh
+# ansible-role-sshd
 
 Flexible role to configure OpenSSH server.
 
