@@ -1,0 +1,11 @@
+# Configuration from installed Ubuntu 20.04 OpenSSH server
+openssh_ChallengeResponseAuthentication: "no"
+openssh_UsePAM: "yes"
+openssh_X11Forwarding: "yes"
+openssh_PrintMotd: "no"
+openssh_AcceptEnv: "LANG LC_*"
+openssh_Subsystem: "sftp  /usr/lib/openssh/sftp-server"
+openssh_PasswordAuthentication: "yes"
+
+openssh_sshd_service: "sshd"
+openssh_sshd_config_file: "/etc/ssh/sshd_config"
