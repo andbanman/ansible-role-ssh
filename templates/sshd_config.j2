@@ -1,441 +1,441 @@
 Include /etc/ssh/sshd_config.d/*
-{%if common_sshd_AcceptEnv is defined %}
-AcceptEnv {{ common_sshd_AcceptEnv }}
+{%if sshd_AcceptEnv is defined %}
+AcceptEnv {{ sshd_AcceptEnv }}
 {% else %}
 #AcceptEnv
 {% endif %}
-{%if common_sshd_AddressFamily is defined %}
-AddressFamily {{ common_sshd_AddressFamily }}
+{%if sshd_AddressFamily is defined %}
+AddressFamily {{ sshd_AddressFamily }}
 {% else %}
 #AddressFamily
 {% endif %}
-{%if common_sshd_AllowAgentForwarding is defined %}
-AllowAgentForwarding {{ common_sshd_AllowAgentForwarding }}
+{%if sshd_AllowAgentForwarding is defined %}
+AllowAgentForwarding {{ sshd_AllowAgentForwarding }}
 {% else %}
 #AllowAgentForwarding
 {% endif %}
-{%if common_sshd_AllowGroups is defined %}
-AllowGroups {{ common_sshd_AllowGroups }}
+{%if sshd_AllowGroups is defined %}
+AllowGroups {{ sshd_AllowGroups }}
 {% else %}
 #AllowGroups
 {% endif %}
-{%if common_sshd_AllowStreamLocalForwarding is defined %}
-AllowStreamLocalForwarding {{ common_sshd_AllowStreamLocalForwarding }}
+{%if sshd_AllowStreamLocalForwarding is defined %}
+AllowStreamLocalForwarding {{ sshd_AllowStreamLocalForwarding }}
 {% else %}
 #AllowStreamLocalForwarding
 {% endif %}
-{%if common_sshd_AllowTcpForwarding is defined %}
-AllowTcpForwarding {{ common_sshd_AllowTcpForwarding }}
+{%if sshd_AllowTcpForwarding is defined %}
+AllowTcpForwarding {{ sshd_AllowTcpForwarding }}
 {% else %}
 #AllowTcpForwarding
 {% endif %}
-{%if common_sshd_AllowUsers is defined %}
-AllowUsers {{ common_sshd_AllowUsers }}
+{%if sshd_AllowUsers is defined %}
+AllowUsers {{ sshd_AllowUsers }}
 {% else %}
 #AllowUsers
 {% endif %}
-{%if common_sshd_AuthenticationMethods is defined %}
-AuthenticationMethods {{ common_sshd_AuthenticationMethods }}
+{%if sshd_AuthenticationMethods is defined %}
+AuthenticationMethods {{ sshd_AuthenticationMethods }}
 {% else %}
 #AuthenticationMethods
 {% endif %}
-{%if common_sshd_AuthorizedKeysCommand is defined %}
-AuthorizedKeysCommand {{ common_sshd_AuthorizedKeysCommand }}
+{%if sshd_AuthorizedKeysCommand is defined %}
+AuthorizedKeysCommand {{ sshd_AuthorizedKeysCommand }}
 {% else %}
 #AuthorizedKeysCommand
 {% endif %}
-{%if common_sshd_AuthorizedKeysCommandUser is defined %}
-AuthorizedKeysCommandUser {{ common_sshd_AuthorizedKeysCommandUser }}
+{%if sshd_AuthorizedKeysCommandUser is defined %}
+AuthorizedKeysCommandUser {{ sshd_AuthorizedKeysCommandUser }}
 {% else %}
 #AuthorizedKeysCommandUser
 {% endif %}
-{%if common_sshd_AuthorizedKeysFile is defined %}
-AuthorizedKeysFile {{ common_sshd_AuthorizedKeysFile }}
+{%if sshd_AuthorizedKeysFile is defined %}
+AuthorizedKeysFile {{ sshd_AuthorizedKeysFile }}
 {% else %}
 #AuthorizedKeysFile
 {% endif %}
-{%if common_sshd_AuthorizedPrincipalsCommand is defined %}
-AuthorizedPrincipalsCommand {{ common_sshd_AuthorizedPrincipalsCommand }}
+{%if sshd_AuthorizedPrincipalsCommand is defined %}
+AuthorizedPrincipalsCommand {{ sshd_AuthorizedPrincipalsCommand }}
 {% else %}
 #AuthorizedPrincipalsCommand
 {% endif %}
-{%if common_sshd_AuthorizedPrincipalsCommandUser is defined %}
-AuthorizedPrincipalsCommandUser {{ common_sshd_AuthorizedPrincipalsCommandUser }}
+{%if sshd_AuthorizedPrincipalsCommandUser is defined %}
+AuthorizedPrincipalsCommandUser {{ sshd_AuthorizedPrincipalsCommandUser }}
 {% else %}
 #AuthorizedPrincipalsCommandUser
 {% endif %}
-{%if common_sshd_AuthorizedPrincipalsFile is defined %}
-AuthorizedPrincipalsFile {{ common_sshd_AuthorizedPrincipalsFile }}
+{%if sshd_AuthorizedPrincipalsFile is defined %}
+AuthorizedPrincipalsFile {{ sshd_AuthorizedPrincipalsFile }}
 {% else %}
 #AuthorizedPrincipalsFile
 {% endif %}
-{%if common_sshd_Banner is defined %}
-Banner {{ common_sshd_Banner }}
+{%if sshd_Banner is defined %}
+Banner {{ sshd_Banner }}
 {% else %}
 #Banner
 {% endif %}
-{%if common_sshd_ChallengeResponseAuthentication is defined %}
-ChallengeResponseAuthentication {{ common_sshd_ChallengeResponseAuthentication }}
+{%if sshd_ChallengeResponseAuthentication is defined %}
+ChallengeResponseAuthentication {{ sshd_ChallengeResponseAuthentication }}
 {% else %}
 #ChallengeResponseAuthentication
 {% endif %}
-{%if common_sshd_ChrootDirectory is defined %}
-ChrootDirectory {{ common_sshd_ChrootDirectory }}
+{%if sshd_ChrootDirectory is defined %}
+ChrootDirectory {{ sshd_ChrootDirectory }}
 {% else %}
 #ChrootDirectory
 {% endif %}
-{%if common_sshd_Ciphers is defined %}
-Ciphers {{ common_sshd_Ciphers }}
+{%if sshd_Ciphers is defined %}
+Ciphers {{ sshd_Ciphers }}
 {% else %}
 #Ciphers
 {% endif %}
-{%if common_sshd_ClientAliveCountMax is defined %}
-ClientAliveCountMax {{ common_sshd_ClientAliveCountMax }}
+{%if sshd_ClientAliveCountMax is defined %}
+ClientAliveCountMax {{ sshd_ClientAliveCountMax }}
 {% else %}
 #ClientAliveCountMax
 {% endif %}
-{%if common_sshd_ClientAliveInterval is defined %}
-ClientAliveInterval {{ common_sshd_ClientAliveInterval }}
+{%if sshd_ClientAliveInterval is defined %}
+ClientAliveInterval {{ sshd_ClientAliveInterval }}
 {% else %}
 #ClientAliveInterval
 {% endif %}
-{%if common_sshd_Compression is defined %}
-Compression {{ common_sshd_Compression }}
+{%if sshd_Compression is defined %}
+Compression {{ sshd_Compression }}
 {% else %}
 #Compression
 {% endif %}
-{%if common_sshd_DebianBanner is defined %}
-DebianBanner {{ common_sshd_DebianBanner }}
+{%if sshd_DebianBanner is defined %}
+DebianBanner {{ sshd_DebianBanner }}
 {% else %}
 #DebianBanner
 {% endif %}
-{%if common_sshd_DenyGroups is defined %}
-DenyGroups {{ common_sshd_DenyGroups }}
+{%if sshd_DenyGroups is defined %}
+DenyGroups {{ sshd_DenyGroups }}
 {% else %}
 #DenyGroups
 {% endif %}
-{%if common_sshd_DenyUsers is defined %}
-DenyUsers {{ common_sshd_DenyUsers }}
+{%if sshd_DenyUsers is defined %}
+DenyUsers {{ sshd_DenyUsers }}
 {% else %}
 #DenyUsers
 {% endif %}
-{%if common_sshd_DisableForwarding is defined %}
-DisableForwarding {{ common_sshd_DisableForwarding }}
+{%if sshd_DisableForwarding is defined %}
+DisableForwarding {{ sshd_DisableForwarding }}
 {% else %}
 #DisableForwarding
 {% endif %}
-{%if common_sshd_ExposeAuthInfo is defined %}
-ExposeAuthInfo {{ common_sshd_ExposeAuthInfo }}
+{%if sshd_ExposeAuthInfo is defined %}
+ExposeAuthInfo {{ sshd_ExposeAuthInfo }}
 {% else %}
 #ExposeAuthInfo
 {% endif %}
-{%if common_sshd_FingerprintHash is defined %}
-FingerprintHash {{ common_sshd_FingerprintHash }}
+{%if sshd_FingerprintHash is defined %}
+FingerprintHash {{ sshd_FingerprintHash }}
 {% else %}
 #FingerprintHash
 {% endif %}
-{%if common_sshd_ForceCommand is defined %}
-ForceCommand {{ common_sshd_ForceCommand }}
+{%if sshd_ForceCommand is defined %}
+ForceCommand {{ sshd_ForceCommand }}
 {% else %}
 #ForceCommand
 {% endif %}
-{%if common_sshd_GatewayPorts is defined %}
-GatewayPorts {{ common_sshd_GatewayPorts }}
+{%if sshd_GatewayPorts is defined %}
+GatewayPorts {{ sshd_GatewayPorts }}
 {% else %}
 #GatewayPorts
 {% endif %}
-{%if common_sshd_GSSAPIAuthentication is defined %}
-GSSAPIAuthentication {{ common_sshd_GSSAPIAuthentication }}
+{%if sshd_GSSAPIAuthentication is defined %}
+GSSAPIAuthentication {{ sshd_GSSAPIAuthentication }}
 {% else %}
 #GSSAPIAuthentication
 {% endif %}
-{%if common_sshd_GSSAPIKeyExchange is defined %}
-GSSAPIKeyExchange {{ common_sshd_GSSAPIKeyExchange }}
+{%if sshd_GSSAPIKeyExchange is defined %}
+GSSAPIKeyExchange {{ sshd_GSSAPIKeyExchange }}
 {% else %}
 #GSSAPIKeyExchange
 {% endif %}
-{%if common_sshd_GSSAPICleanupCredentials is defined %}
-GSSAPICleanupCredentials {{ common_sshd_GSSAPICleanupCredentials }}
+{%if sshd_GSSAPICleanupCredentials is defined %}
+GSSAPICleanupCredentials {{ sshd_GSSAPICleanupCredentials }}
 {% else %}
 #GSSAPICleanupCredentials
 {% endif %}
-{%if common_sshd_GSSAPIStrictAcceptorCheck is defined %}
-GSSAPIStrictAcceptorCheck {{ common_sshd_GSSAPIStrictAcceptorCheck }}
+{%if sshd_GSSAPIStrictAcceptorCheck is defined %}
+GSSAPIStrictAcceptorCheck {{ sshd_GSSAPIStrictAcceptorCheck }}
 {% else %}
 #GSSAPIStrictAcceptorCheck
 {% endif %}
-{%if common_sshd_GSSAPIStoreCredentialsOnRekey is defined %}
-GSSAPIStoreCredentialsOnRekey {{ common_sshd_GSSAPIStoreCredentialsOnRekey }}
+{%if sshd_GSSAPIStoreCredentialsOnRekey is defined %}
+GSSAPIStoreCredentialsOnRekey {{ sshd_GSSAPIStoreCredentialsOnRekey }}
 {% else %}
 #GSSAPIStoreCredentialsOnRekey
 {% endif %}
-{%if common_sshd_HostbasedAcceptedKeyTypes is defined %}
-HostbasedAcceptedKeyTypes {{ common_sshd_HostbasedAcceptedKeyTypes }}
+{%if sshd_HostbasedAcceptedKeyTypes is defined %}
+HostbasedAcceptedKeyTypes {{ sshd_HostbasedAcceptedKeyTypes }}
 {% else %}
 #HostbasedAcceptedKeyTypes
 {% endif %}
-{%if common_sshd_HostbasedAuthentication is defined %}
-HostbasedAuthentication {{ common_sshd_HostbasedAuthentication }}
+{%if sshd_HostbasedAuthentication is defined %}
+HostbasedAuthentication {{ sshd_HostbasedAuthentication }}
 {% else %}
 #HostbasedAuthentication
 {% endif %}
-{%if common_sshd_HostbasedUsesNameFromPacketOnly is defined %}
-HostbasedUsesNameFromPacketOnly {{ common_sshd_HostbasedUsesNameFromPacketOnly }}
+{%if sshd_HostbasedUsesNameFromPacketOnly is defined %}
+HostbasedUsesNameFromPacketOnly {{ sshd_HostbasedUsesNameFromPacketOnly }}
 {% else %}
 #HostbasedUsesNameFromPacketOnly
 {% endif %}
-{%if common_sshd_HostCertificate is defined %}
-HostCertificate {{ common_sshd_HostCertificate }}
+{%if sshd_HostCertificate is defined %}
+HostCertificate {{ sshd_HostCertificate }}
 {% else %}
 #HostCertificate
 {% endif %}
-{%if common_sshd_HostKey is defined %}
-HostKey {{ common_sshd_HostKey }}
+{%if sshd_HostKey is defined %}
+HostKey {{ sshd_HostKey }}
 {% else %}
 #HostKey
 {% endif %}
-{%if common_sshd_HostKeyAgent is defined %}
-HostKeyAgent {{ common_sshd_HostKeyAgent }}
+{%if sshd_HostKeyAgent is defined %}
+HostKeyAgent {{ sshd_HostKeyAgent }}
 {% else %}
 #HostKeyAgent
 {% endif %}
-{%if common_sshd_HostKeyAlgorithms is defined %}
-HostKeyAlgorithms {{ common_sshd_HostKeyAlgorithms }}
+{%if sshd_HostKeyAlgorithms is defined %}
+HostKeyAlgorithms {{ sshd_HostKeyAlgorithms }}
 {% else %}
 #HostKeyAlgorithms
 {% endif %}
-{%if common_sshd_IgnoreRhosts is defined %}
-IgnoreRhosts {{ common_sshd_IgnoreRhosts }}
+{%if sshd_IgnoreRhosts is defined %}
+IgnoreRhosts {{ sshd_IgnoreRhosts }}
 {% else %}
 #IgnoreRhosts
 {% endif %}
-{%if common_sshd_IgnoreUserKnownHosts is defined %}
-IgnoreUserKnownHosts {{ common_sshd_IgnoreUserKnownHosts }}
+{%if sshd_IgnoreUserKnownHosts is defined %}
+IgnoreUserKnownHosts {{ sshd_IgnoreUserKnownHosts }}
 {% else %}
 #IgnoreUserKnownHosts
 {% endif %}
-{%if common_sshd_IPQoS is defined %}
-IPQoS {{ common_sshd_IPQoS }}
+{%if sshd_IPQoS is defined %}
+IPQoS {{ sshd_IPQoS }}
 {% else %}
 #IPQoS
 {% endif %}
-{%if common_sshd_KbdInteractiveAuthentication is defined %}
-KbdInteractiveAuthentication {{ common_sshd_KbdInteractiveAuthentication }}
+{%if sshd_KbdInteractiveAuthentication is defined %}
+KbdInteractiveAuthentication {{ sshd_KbdInteractiveAuthentication }}
 {% else %}
 #KbdInteractiveAuthentication
 {% endif %}
-{%if common_sshd_KerberosAuthentication is defined %}
-KerberosAuthentication {{ common_sshd_KerberosAuthentication }}
+{%if sshd_KerberosAuthentication is defined %}
+KerberosAuthentication {{ sshd_KerberosAuthentication }}
 {% else %}
 #KerberosAuthentication
 {% endif %}
-{%if common_sshd_KerberosGetAFSToken is defined %}
-KerberosGetAFSToken {{ common_sshd_KerberosGetAFSToken }}
+{%if sshd_KerberosGetAFSToken is defined %}
+KerberosGetAFSToken {{ sshd_KerberosGetAFSToken }}
 {% else %}
 #KerberosGetAFSToken
 {% endif %}
-{%if common_sshd_KerberosOrLocalPasswd is defined %}
-KerberosOrLocalPasswd {{ common_sshd_KerberosOrLocalPasswd }}
+{%if sshd_KerberosOrLocalPasswd is defined %}
+KerberosOrLocalPasswd {{ sshd_KerberosOrLocalPasswd }}
 {% else %}
 #KerberosOrLocalPasswd
 {% endif %}
-{%if common_sshd_KerberosTicketCleanup is defined %}
-KerberosTicketCleanup {{ common_sshd_KerberosTicketCleanup }}
+{%if sshd_KerberosTicketCleanup is defined %}
+KerberosTicketCleanup {{ sshd_KerberosTicketCleanup }}
 {% else %}
 #KerberosTicketCleanup
 {% endif %}
-{%if common_sshd_KexAlgorithms is defined %}
-KexAlgorithms {{ common_sshd_KexAlgorithms }}
+{%if sshd_KexAlgorithms is defined %}
+KexAlgorithms {{ sshd_KexAlgorithms }}
 {% else %}
 #KexAlgorithms
 {% endif %}
-{%if common_sshd_ListenAddress is defined %}
-ListenAddress {{ common_sshd_ListenAddress }}
+{%if sshd_ListenAddress is defined %}
+ListenAddress {{ sshd_ListenAddress }}
 {% else %}
 #ListenAddress
 {% endif %}
-{%if common_sshd_LoginGraceTime is defined %}
-LoginGraceTime {{ common_sshd_LoginGraceTime }}
+{%if sshd_LoginGraceTime is defined %}
+LoginGraceTime {{ sshd_LoginGraceTime }}
 {% else %}
 #LoginGraceTime
 {% endif %}
-{%if common_sshd_LogLevel is defined %}
-LogLevel {{ common_sshd_LogLevel }}
+{%if sshd_LogLevel is defined %}
+LogLevel {{ sshd_LogLevel }}
 {% else %}
 #LogLevel
 {% endif %}
-{%if common_sshd_MACs is defined %}
-MACs {{ common_sshd_MACs }}
+{%if sshd_MACs is defined %}
+MACs {{ sshd_MACs }}
 {% else %}
 #MACs
 {% endif %}
-{%if common_sshd_MaxAuthTries is defined %}
-MaxAuthTries {{ common_sshd_MaxAuthTries }}
+{%if sshd_MaxAuthTries is defined %}
+MaxAuthTries {{ sshd_MaxAuthTries }}
 {% else %}
 #MaxAuthTries
 {% endif %}
-{%if common_sshd_MaxSessions is defined %}
-MaxSessions {{ common_sshd_MaxSessions }}
+{%if sshd_MaxSessions is defined %}
+MaxSessions {{ sshd_MaxSessions }}
 {% else %}
 #MaxSessions
 {% endif %}
-{%if common_sshd_MaxStartups is defined %}
-MaxStartups {{ common_sshd_MaxStartups }}
+{%if sshd_MaxStartups is defined %}
+MaxStartups {{ sshd_MaxStartups }}
 {% else %}
 #MaxStartups
 {% endif %}
-{%if common_sshd_PasswordAuthentication is defined %}
-PasswordAuthentication {{ common_sshd_PasswordAuthentication }}
+{%if sshd_PasswordAuthentication is defined %}
+PasswordAuthentication {{ sshd_PasswordAuthentication }}
 {% else %}
 #PasswordAuthentication
 {% endif %}
-{%if common_sshd_PermitEmptyPasswords is defined %}
-PermitEmptyPasswords {{ common_sshd_PermitEmptyPasswords }}
+{%if sshd_PermitEmptyPasswords is defined %}
+PermitEmptyPasswords {{ sshd_PermitEmptyPasswords }}
 {% else %}
 #PermitEmptyPasswords
 {% endif %}
-{%if common_sshd_PermitOpen is defined %}
-PermitOpen {{ common_sshd_PermitOpen }}
+{%if sshd_PermitOpen is defined %}
+PermitOpen {{ sshd_PermitOpen }}
 {% else %}
 #PermitOpen
 {% endif %}
-{%if common_sshd_PermitRootLogin is defined %}
-PermitRootLogin {{ common_sshd_PermitRootLogin }}
+{%if sshd_PermitRootLogin is defined %}
+PermitRootLogin {{ sshd_PermitRootLogin }}
 {% else %}
 #PermitRootLogin
 {% endif %}
-{%if common_sshd_PermitTTY is defined %}
-PermitTTY {{ common_sshd_PermitTTY }}
+{%if sshd_PermitTTY is defined %}
+PermitTTY {{ sshd_PermitTTY }}
 {% else %}
 #PermitTTY
 {% endif %}
-{%if common_sshd_PermitTunnel is defined %}
-PermitTunnel {{ common_sshd_PermitTunnel }}
+{%if sshd_PermitTunnel is defined %}
+PermitTunnel {{ sshd_PermitTunnel }}
 {% else %}
 #PermitTunnel
 {% endif %}
-{%if common_sshd_PermitUserEnvironment is defined %}
-PermitUserEnvironment {{ common_sshd_PermitUserEnvironment }}
+{%if sshd_PermitUserEnvironment is defined %}
+PermitUserEnvironment {{ sshd_PermitUserEnvironment }}
 {% else %}
 #PermitUserEnvironment
 {% endif %}
-{%if common_sshd_PermitUserRC is defined %}
-PermitUserRC {{ common_sshd_PermitUserRC }}
+{%if sshd_PermitUserRC is defined %}
+PermitUserRC {{ sshd_PermitUserRC }}
 {% else %}
 #PermitUserRC
 {% endif %}
-{%if common_sshd_PidFile is defined %}
-PidFile {{ common_sshd_PidFile }}
+{%if sshd_PidFile is defined %}
+PidFile {{ sshd_PidFile }}
 {% else %}
 #PidFile
 {% endif %}
-{%if common_sshd_Port is defined %}
-Port {{ common_sshd_Port }}
+{%if sshd_Port is defined %}
+Port {{ sshd_Port }}
 {% else %}
 #Port
 {% endif %}
-{%if common_sshd_PrintLastLog is defined %}
-PrintLastLog {{ common_sshd_PrintLastLog }}
+{%if sshd_PrintLastLog is defined %}
+PrintLastLog {{ sshd_PrintLastLog }}
 {% else %}
 #PrintLastLog
 {% endif %}
-{%if common_sshd_PrintMotd is defined %}
-PrintMotd {{ common_sshd_PrintMotd }}
+{%if sshd_PrintMotd is defined %}
+PrintMotd {{ sshd_PrintMotd }}
 {% else %}
 #PrintMotd
 {% endif %}
-{%if common_sshd_PubkeyAcceptedKeyTypes is defined %}
-PubkeyAcceptedKeyTypes {{ common_sshd_PubkeyAcceptedKeyTypes }}
+{%if sshd_PubkeyAcceptedKeyTypes is defined %}
+PubkeyAcceptedKeyTypes {{ sshd_PubkeyAcceptedKeyTypes }}
 {% else %}
 #PubkeyAcceptedKeyTypes
 {% endif %}
-{%if common_sshd_PubkeyAuthentication is defined %}
-PubkeyAuthentication {{ common_sshd_PubkeyAuthentication }}
+{%if sshd_PubkeyAuthentication is defined %}
+PubkeyAuthentication {{ sshd_PubkeyAuthentication }}
 {% else %}
 #PubkeyAuthentication
 {% endif %}
-{%if common_sshd_RekeyLimit is defined %}
-RekeyLimit {{ common_sshd_RekeyLimit }}
+{%if sshd_RekeyLimit is defined %}
+RekeyLimit {{ sshd_RekeyLimit }}
 {% else %}
 #RekeyLimit
 {% endif %}
-{%if common_sshd_RevokedKeys is defined %}
-RevokedKeys {{ common_sshd_RevokedKeys }}
+{%if sshd_RevokedKeys is defined %}
+RevokedKeys {{ sshd_RevokedKeys }}
 {% else %}
 #RevokedKeys
 {% endif %}
-{%if common_sshd_StreamLocalBindMask is defined %}
-StreamLocalBindMask {{ common_sshd_StreamLocalBindMask }}
+{%if sshd_StreamLocalBindMask is defined %}
+StreamLocalBindMask {{ sshd_StreamLocalBindMask }}
 {% else %}
 #StreamLocalBindMask
 {% endif %}
-{%if common_sshd_StreamLocalBindUnlink is defined %}
-StreamLocalBindUnlink {{ common_sshd_StreamLocalBindUnlink }}
+{%if sshd_StreamLocalBindUnlink is defined %}
+StreamLocalBindUnlink {{ sshd_StreamLocalBindUnlink }}
 {% else %}
 #StreamLocalBindUnlink
 {% endif %}
-{%if common_sshd_StrictModes is defined %}
-StrictModes {{ common_sshd_StrictModes }}
+{%if sshd_StrictModes is defined %}
+StrictModes {{ sshd_StrictModes }}
 {% else %}
 #StrictModes
 {% endif %}
-{%if common_sshd_Subsystem is defined %}
-Subsystem {{ common_sshd_Subsystem }}
+{%if sshd_Subsystem is defined %}
+Subsystem {{ sshd_Subsystem }}
 {% else %}
 #Subsystem
 {% endif %}
-{%if common_sshd_SyslogFacility is defined %}
-SyslogFacility {{ common_sshd_SyslogFacility }}
+{%if sshd_SyslogFacility is defined %}
+SyslogFacility {{ sshd_SyslogFacility }}
 {% else %}
 #SyslogFacility
 {% endif %}
-{%if common_sshd_TCPKeepAlive is defined %}
-TCPKeepAlive {{ common_sshd_TCPKeepAlive }}
+{%if sshd_TCPKeepAlive is defined %}
+TCPKeepAlive {{ sshd_TCPKeepAlive }}
 {% else %}
 #TCPKeepAlive
 {% endif %}
-{%if common_sshd_TrustedUserCAKeys is defined %}
-TrustedUserCAKeys {{ common_sshd_TrustedUserCAKeys }}
+{%if sshd_TrustedUserCAKeys is defined %}
+TrustedUserCAKeys {{ sshd_TrustedUserCAKeys }}
 {% else %}
 #TrustedUserCAKeys
 {% endif %}
-{%if common_sshd_UseDNS is defined %}
-UseDNS {{ common_sshd_UseDNS }}
+{%if sshd_UseDNS is defined %}
+UseDNS {{ sshd_UseDNS }}
 {% else %}
 #UseDNS
 {% endif %}
-{%if common_sshd_UsePAM is defined %}
-UsePAM {{ common_sshd_UsePAM }}
+{%if sshd_UsePAM is defined %}
+UsePAM {{ sshd_UsePAM }}
 {% else %}
 #UsePAM
 {% endif %}
-{%if common_sshd_VersionAddendum is defined %}
-VersionAddendum {{ common_sshd_VersionAddendum }}
+{%if sshd_VersionAddendum is defined %}
+VersionAddendum {{ sshd_VersionAddendum }}
 {% else %}
 #VersionAddendum
 {% endif %}
-{%if common_sshd_X11DisplayOffset is defined %}
-X11DisplayOffset {{ common_sshd_X11DisplayOffset }}
+{%if sshd_X11DisplayOffset is defined %}
+X11DisplayOffset {{ sshd_X11DisplayOffset }}
 {% else %}
 #X11DisplayOffset
 {% endif %}
-{%if common_sshd_X11Forwarding is defined %}
-X11Forwarding {{ common_sshd_X11Forwarding }}
+{%if sshd_X11Forwarding is defined %}
+X11Forwarding {{ sshd_X11Forwarding }}
 {% else %}
 #X11Forwarding
 {% endif %}
-{%if common_sshd_X11UseLocalhost is defined %}
-X11UseLocalhost {{ common_sshd_X11UseLocalhost }}
+{%if sshd_X11UseLocalhost is defined %}
+X11UseLocalhost {{ sshd_X11UseLocalhost }}
 {% else %}
 #X11UseLocalhost
 {% endif %}
-{%if common_sshd_XAuthLocation is defined %}
-XAuthLocation {{ common_sshd_XAuthLocation }}
+{%if sshd_XAuthLocation is defined %}
+XAuthLocation {{ sshd_XAuthLocation }}
 {% else %}
 #XAuthLocation
 {% endif %}
-{%if common_sshd_Match is defined %}
-Match {{ common_sshd_Match }}
+{%if sshd_Match is defined %}
+Match {{ sshd_Match }}
 {% else %}
 #Match
 {% endif %}
