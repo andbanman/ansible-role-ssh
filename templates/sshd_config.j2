@@ -1,440 +1,264 @@
 {%if sshd_AcceptEnv is defined %}
 AcceptEnv {{ sshd_AcceptEnv }}
-{% else %}
-#AcceptEnv
 {% endif %}
 {%if sshd_AddressFamily is defined %}
 AddressFamily {{ sshd_AddressFamily }}
-{% else %}
-#AddressFamily
 {% endif %}
 {%if sshd_AllowAgentForwarding is defined %}
 AllowAgentForwarding {{ sshd_AllowAgentForwarding }}
-{% else %}
-#AllowAgentForwarding
 {% endif %}
 {%if sshd_AllowGroups is defined %}
 AllowGroups {{ sshd_AllowGroups }}
-{% else %}
-#AllowGroups
 {% endif %}
 {%if sshd_AllowStreamLocalForwarding is defined %}
 AllowStreamLocalForwarding {{ sshd_AllowStreamLocalForwarding }}
-{% else %}
-#AllowStreamLocalForwarding
 {% endif %}
 {%if sshd_AllowTcpForwarding is defined %}
 AllowTcpForwarding {{ sshd_AllowTcpForwarding }}
-{% else %}
-#AllowTcpForwarding
 {% endif %}
 {%if sshd_AllowUsers is defined %}
 AllowUsers {{ sshd_AllowUsers }}
-{% else %}
-#AllowUsers
 {% endif %}
 {%if sshd_AuthenticationMethods is defined %}
 AuthenticationMethods {{ sshd_AuthenticationMethods }}
-{% else %}
-#AuthenticationMethods
 {% endif %}
 {%if sshd_AuthorizedKeysCommand is defined %}
 AuthorizedKeysCommand {{ sshd_AuthorizedKeysCommand }}
-{% else %}
-#AuthorizedKeysCommand
 {% endif %}
 {%if sshd_AuthorizedKeysCommandUser is defined %}
 AuthorizedKeysCommandUser {{ sshd_AuthorizedKeysCommandUser }}
-{% else %}
-#AuthorizedKeysCommandUser
 {% endif %}
 {%if sshd_AuthorizedKeysFile is defined %}
 AuthorizedKeysFile {{ sshd_AuthorizedKeysFile }}
-{% else %}
-#AuthorizedKeysFile
 {% endif %}
 {%if sshd_AuthorizedPrincipalsCommand is defined %}
 AuthorizedPrincipalsCommand {{ sshd_AuthorizedPrincipalsCommand }}
-{% else %}
-#AuthorizedPrincipalsCommand
 {% endif %}
 {%if sshd_AuthorizedPrincipalsCommandUser is defined %}
 AuthorizedPrincipalsCommandUser {{ sshd_AuthorizedPrincipalsCommandUser }}
-{% else %}
-#AuthorizedPrincipalsCommandUser
 {% endif %}
 {%if sshd_AuthorizedPrincipalsFile is defined %}
 AuthorizedPrincipalsFile {{ sshd_AuthorizedPrincipalsFile }}
-{% else %}
-#AuthorizedPrincipalsFile
 {% endif %}
 {%if sshd_Banner is defined %}
 Banner {{ sshd_Banner }}
-{% else %}
-#Banner
 {% endif %}
 {%if sshd_ChallengeResponseAuthentication is defined %}
 ChallengeResponseAuthentication {{ sshd_ChallengeResponseAuthentication }}
-{% else %}
-#ChallengeResponseAuthentication
 {% endif %}
 {%if sshd_ChrootDirectory is defined %}
 ChrootDirectory {{ sshd_ChrootDirectory }}
-{% else %}
-#ChrootDirectory
 {% endif %}
 {%if sshd_Ciphers is defined %}
 Ciphers {{ sshd_Ciphers }}
-{% else %}
-#Ciphers
 {% endif %}
 {%if sshd_ClientAliveCountMax is defined %}
 ClientAliveCountMax {{ sshd_ClientAliveCountMax }}
-{% else %}
-#ClientAliveCountMax
 {% endif %}
 {%if sshd_ClientAliveInterval is defined %}
 ClientAliveInterval {{ sshd_ClientAliveInterval }}
-{% else %}
-#ClientAliveInterval
 {% endif %}
 {%if sshd_Compression is defined %}
 Compression {{ sshd_Compression }}
-{% else %}
-#Compression
 {% endif %}
 {%if sshd_DebianBanner is defined %}
 DebianBanner {{ sshd_DebianBanner }}
-{% else %}
-#DebianBanner
 {% endif %}
 {%if sshd_DenyGroups is defined %}
 DenyGroups {{ sshd_DenyGroups }}
-{% else %}
-#DenyGroups
 {% endif %}
 {%if sshd_DenyUsers is defined %}
 DenyUsers {{ sshd_DenyUsers }}
-{% else %}
-#DenyUsers
 {% endif %}
 {%if sshd_DisableForwarding is defined %}
 DisableForwarding {{ sshd_DisableForwarding }}
-{% else %}
-#DisableForwarding
 {% endif %}
 {%if sshd_ExposeAuthInfo is defined %}
 ExposeAuthInfo {{ sshd_ExposeAuthInfo }}
-{% else %}
-#ExposeAuthInfo
 {% endif %}
 {%if sshd_FingerprintHash is defined %}
 FingerprintHash {{ sshd_FingerprintHash }}
-{% else %}
-#FingerprintHash
 {% endif %}
 {%if sshd_ForceCommand is defined %}
 ForceCommand {{ sshd_ForceCommand }}
-{% else %}
-#ForceCommand
 {% endif %}
 {%if sshd_GatewayPorts is defined %}
 GatewayPorts {{ sshd_GatewayPorts }}
-{% else %}
-#GatewayPorts
 {% endif %}
 {%if sshd_GSSAPIAuthentication is defined %}
 GSSAPIAuthentication {{ sshd_GSSAPIAuthentication }}
-{% else %}
-#GSSAPIAuthentication
 {% endif %}
 {%if sshd_GSSAPIKeyExchange is defined %}
 GSSAPIKeyExchange {{ sshd_GSSAPIKeyExchange }}
-{% else %}
-#GSSAPIKeyExchange
 {% endif %}
 {%if sshd_GSSAPICleanupCredentials is defined %}
 GSSAPICleanupCredentials {{ sshd_GSSAPICleanupCredentials }}
-{% else %}
-#GSSAPICleanupCredentials
 {% endif %}
 {%if sshd_GSSAPIStrictAcceptorCheck is defined %}
 GSSAPIStrictAcceptorCheck {{ sshd_GSSAPIStrictAcceptorCheck }}
-{% else %}
-#GSSAPIStrictAcceptorCheck
 {% endif %}
 {%if sshd_GSSAPIStoreCredentialsOnRekey is defined %}
 GSSAPIStoreCredentialsOnRekey {{ sshd_GSSAPIStoreCredentialsOnRekey }}
-{% else %}
-#GSSAPIStoreCredentialsOnRekey
 {% endif %}
 {%if sshd_HostbasedAcceptedKeyTypes is defined %}
 HostbasedAcceptedKeyTypes {{ sshd_HostbasedAcceptedKeyTypes }}
-{% else %}
-#HostbasedAcceptedKeyTypes
 {% endif %}
 {%if sshd_HostbasedAuthentication is defined %}
 HostbasedAuthentication {{ sshd_HostbasedAuthentication }}
-{% else %}
-#HostbasedAuthentication
 {% endif %}
 {%if sshd_HostbasedUsesNameFromPacketOnly is defined %}
 HostbasedUsesNameFromPacketOnly {{ sshd_HostbasedUsesNameFromPacketOnly }}
-{% else %}
-#HostbasedUsesNameFromPacketOnly
 {% endif %}
 {%if sshd_HostCertificate is defined %}
 HostCertificate {{ sshd_HostCertificate }}
-{% else %}
-#HostCertificate
 {% endif %}
 {%if sshd_HostKey is defined %}
 HostKey {{ sshd_HostKey }}
-{% else %}
-#HostKey
 {% endif %}
 {%if sshd_HostKeyAgent is defined %}
 HostKeyAgent {{ sshd_HostKeyAgent }}
-{% else %}
-#HostKeyAgent
 {% endif %}
 {%if sshd_HostKeyAlgorithms is defined %}
 HostKeyAlgorithms {{ sshd_HostKeyAlgorithms }}
-{% else %}
-#HostKeyAlgorithms
 {% endif %}
 {%if sshd_IgnoreRhosts is defined %}
 IgnoreRhosts {{ sshd_IgnoreRhosts }}
-{% else %}
-#IgnoreRhosts
 {% endif %}
 {%if sshd_IgnoreUserKnownHosts is defined %}
 IgnoreUserKnownHosts {{ sshd_IgnoreUserKnownHosts }}
-{% else %}
-#IgnoreUserKnownHosts
 {% endif %}
 {%if sshd_IPQoS is defined %}
 IPQoS {{ sshd_IPQoS }}
-{% else %}
-#IPQoS
 {% endif %}
 {%if sshd_KbdInteractiveAuthentication is defined %}
 KbdInteractiveAuthentication {{ sshd_KbdInteractiveAuthentication }}
-{% else %}
-#KbdInteractiveAuthentication
 {% endif %}
 {%if sshd_KerberosAuthentication is defined %}
 KerberosAuthentication {{ sshd_KerberosAuthentication }}
-{% else %}
-#KerberosAuthentication
 {% endif %}
 {%if sshd_KerberosGetAFSToken is defined %}
 KerberosGetAFSToken {{ sshd_KerberosGetAFSToken }}
-{% else %}
-#KerberosGetAFSToken
 {% endif %}
 {%if sshd_KerberosOrLocalPasswd is defined %}
 KerberosOrLocalPasswd {{ sshd_KerberosOrLocalPasswd }}
-{% else %}
-#KerberosOrLocalPasswd
 {% endif %}
 {%if sshd_KerberosTicketCleanup is defined %}
 KerberosTicketCleanup {{ sshd_KerberosTicketCleanup }}
-{% else %}
-#KerberosTicketCleanup
 {% endif %}
 {%if sshd_KexAlgorithms is defined %}
 KexAlgorithms {{ sshd_KexAlgorithms }}
-{% else %}
-#KexAlgorithms
 {% endif %}
 {%if sshd_ListenAddress is defined %}
 ListenAddress {{ sshd_ListenAddress }}
-{% else %}
-#ListenAddress
 {% endif %}
 {%if sshd_LoginGraceTime is defined %}
 LoginGraceTime {{ sshd_LoginGraceTime }}
-{% else %}
-#LoginGraceTime
 {% endif %}
 {%if sshd_LogLevel is defined %}
 LogLevel {{ sshd_LogLevel }}
-{% else %}
-#LogLevel
 {% endif %}
 {%if sshd_MACs is defined %}
 MACs {{ sshd_MACs }}
-{% else %}
-#MACs
 {% endif %}
 {%if sshd_MaxAuthTries is defined %}
 MaxAuthTries {{ sshd_MaxAuthTries }}
-{% else %}
-#MaxAuthTries
 {% endif %}
 {%if sshd_MaxSessions is defined %}
 MaxSessions {{ sshd_MaxSessions }}
-{% else %}
-#MaxSessions
 {% endif %}
 {%if sshd_MaxStartups is defined %}
 MaxStartups {{ sshd_MaxStartups }}
-{% else %}
-#MaxStartups
 {% endif %}
 {%if sshd_PasswordAuthentication is defined %}
 PasswordAuthentication {{ sshd_PasswordAuthentication }}
-{% else %}
-#PasswordAuthentication
 {% endif %}
 {%if sshd_PermitEmptyPasswords is defined %}
 PermitEmptyPasswords {{ sshd_PermitEmptyPasswords }}
-{% else %}
-#PermitEmptyPasswords
 {% endif %}
 {%if sshd_PermitOpen is defined %}
 PermitOpen {{ sshd_PermitOpen }}
-{% else %}
-#PermitOpen
 {% endif %}
 {%if sshd_PermitRootLogin is defined %}
 PermitRootLogin {{ sshd_PermitRootLogin }}
-{% else %}
-#PermitRootLogin
 {% endif %}
 {%if sshd_PermitTTY is defined %}
 PermitTTY {{ sshd_PermitTTY }}
-{% else %}
-#PermitTTY
 {% endif %}
 {%if sshd_PermitTunnel is defined %}
 PermitTunnel {{ sshd_PermitTunnel }}
-{% else %}
-#PermitTunnel
 {% endif %}
 {%if sshd_PermitUserEnvironment is defined %}
 PermitUserEnvironment {{ sshd_PermitUserEnvironment }}
-{% else %}
-#PermitUserEnvironment
 {% endif %}
 {%if sshd_PermitUserRC is defined %}
 PermitUserRC {{ sshd_PermitUserRC }}
-{% else %}
-#PermitUserRC
 {% endif %}
 {%if sshd_PidFile is defined %}
 PidFile {{ sshd_PidFile }}
-{% else %}
-#PidFile
 {% endif %}
 {%if sshd_Port is defined %}
 Port {{ sshd_Port }}
-{% else %}
-#Port
 {% endif %}
 {%if sshd_PrintLastLog is defined %}
 PrintLastLog {{ sshd_PrintLastLog }}
-{% else %}
-#PrintLastLog
 {% endif %}
 {%if sshd_PrintMotd is defined %}
 PrintMotd {{ sshd_PrintMotd }}
-{% else %}
-#PrintMotd
 {% endif %}
 {%if sshd_PubkeyAcceptedKeyTypes is defined %}
 PubkeyAcceptedKeyTypes {{ sshd_PubkeyAcceptedKeyTypes }}
-{% else %}
-#PubkeyAcceptedKeyTypes
 {% endif %}
 {%if sshd_PubkeyAuthentication is defined %}
 PubkeyAuthentication {{ sshd_PubkeyAuthentication }}
-{% else %}
-#PubkeyAuthentication
 {% endif %}
 {%if sshd_RekeyLimit is defined %}
 RekeyLimit {{ sshd_RekeyLimit }}
-{% else %}
-#RekeyLimit
 {% endif %}
 {%if sshd_RevokedKeys is defined %}
 RevokedKeys {{ sshd_RevokedKeys }}
-{% else %}
-#RevokedKeys
 {% endif %}
 {%if sshd_StreamLocalBindMask is defined %}
 StreamLocalBindMask {{ sshd_StreamLocalBindMask }}
-{% else %}
-#StreamLocalBindMask
 {% endif %}
 {%if sshd_StreamLocalBindUnlink is defined %}
 StreamLocalBindUnlink {{ sshd_StreamLocalBindUnlink }}
-{% else %}
-#StreamLocalBindUnlink
 {% endif %}
 {%if sshd_StrictModes is defined %}
 StrictModes {{ sshd_StrictModes }}
-{% else %}
-#StrictModes
 {% endif %}
 {%if sshd_Subsystem is defined %}
 Subsystem {{ sshd_Subsystem }}
-{% else %}
-#Subsystem
 {% endif %}
 {%if sshd_SyslogFacility is defined %}
 SyslogFacility {{ sshd_SyslogFacility }}
-{% else %}
-#SyslogFacility
 {% endif %}
 {%if sshd_TCPKeepAlive is defined %}
 TCPKeepAlive {{ sshd_TCPKeepAlive }}
-{% else %}
-#TCPKeepAlive
 {% endif %}
 {%if sshd_TrustedUserCAKeys is defined %}
 TrustedUserCAKeys {{ sshd_TrustedUserCAKeys }}
-{% else %}
-#TrustedUserCAKeys
 {% endif %}
 {%if sshd_UseDNS is defined %}
 UseDNS {{ sshd_UseDNS }}
-{% else %}
-#UseDNS
 {% endif %}
 {%if sshd_UsePAM is defined %}
 UsePAM {{ sshd_UsePAM }}
-{% else %}
-#UsePAM
 {% endif %}
 {%if sshd_VersionAddendum is defined %}
 VersionAddendum {{ sshd_VersionAddendum }}
-{% else %}
-#VersionAddendum
 {% endif %}
 {%if sshd_X11DisplayOffset is defined %}
 X11DisplayOffset {{ sshd_X11DisplayOffset }}
-{% else %}
-#X11DisplayOffset
 {% endif %}
 {%if sshd_X11Forwarding is defined %}
 X11Forwarding {{ sshd_X11Forwarding }}
-{% else %}
-#X11Forwarding
 {% endif %}
 {%if sshd_X11UseLocalhost is defined %}
 X11UseLocalhost {{ sshd_X11UseLocalhost }}
-{% else %}
-#X11UseLocalhost
 {% endif %}
 {%if sshd_XAuthLocation is defined %}
 XAuthLocation {{ sshd_XAuthLocation }}
-{% else %}
-#XAuthLocation
 {% endif %}
 {%if sshd_Match is defined %}
 Match {{ sshd_Match }}
-{% else %}
-#Match
 {% endif %}
